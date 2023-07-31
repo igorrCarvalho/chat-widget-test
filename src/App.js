@@ -1,24 +1,24 @@
-import './App.css';
-import ChatWidget from './components/ChatWidget';
-import FormComponent from './components/FormComponent';
-import React, { useState } from 'react';
-import { INITIAL_STATE } from './utils/data';
+import "./App.css";
+import ChatWidget from "./components/ChatWidget";
+import FormComponent from "./components/FormComponent";
+import React, { useState } from "react";
+import { INITIAL_STATE } from "./utils/data";
 
 const App = () => {
   const [state, setState] = useState(INITIAL_STATE);
   const [CWState, setCWState] = useState(INITIAL_STATE);
 
   const handleFormData = ({ target: { value, name } }) => {
-    setState(prevState => ({
+    setState((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
   const handleSaveData = () => {
-    setCWState(prev => ({
-      ...state
-    }))
+    setCWState((prev) => ({
+      ...state,
+    }));
   };
 
   return (
