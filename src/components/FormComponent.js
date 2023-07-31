@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { inputsData } from "../utils/data";
 
-const FormComponent = ({ handleFormData, ...state }) => {
+const FormComponent = ({ handleFormData, handleSaveData, ...state }) => {
   const [showAll, setShowAll] = useState(false);
 
   const toggleShowAll = () => {
@@ -19,7 +19,7 @@ const FormComponent = ({ handleFormData, ...state }) => {
           <label>{obj.labelname}</label>
           <input
             className={obj.required ? obj.inputclass + ' required' : obj.inputclass}
-            type="text"
+            type={obj.inputName === 'height' || obj.inputName === 'width' ? 'number' : 'text'}
             id={obj.inputName}
             name={obj.inputName}
             onChange={handleFormData}
@@ -30,6 +30,7 @@ const FormComponent = ({ handleFormData, ...state }) => {
       <button onClick={toggleShowAll} className="formBtn" type="button">
         {showAll ? "Show Less" : "Show More"}
       </button>
+      <button onClick={handleSaveData} className="formBtn" type="button">Save</button>
     </form>
   );
 };

@@ -19,10 +19,11 @@
 
 .formBtn {
   padding: 5px 0;
-  width: 30%;
+  width: 20%;
   background-color: #151924;
   color: white;
   border: none;
+  margin: 5px 0;
   border-radius: 5px;
 }
 
