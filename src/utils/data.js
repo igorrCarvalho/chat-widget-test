@@ -117,7 +117,7 @@ export const inputsData = [
 ];
 
 export const INITIAL_STATE = {
-    api: '',
+    api: '{}',
     flowId: '',
     hostUrl: '',
     CIField: 'input',

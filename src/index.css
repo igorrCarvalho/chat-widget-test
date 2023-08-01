@@ -15,6 +15,7 @@
   width: 80%;
   padding: 5px;
   border-radius: 5px;
+  margin: 10px auto;
 }
 
 .formBtn {
@@ -25,6 +26,7 @@
   border: none;
   margin: 5px 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .inputDiv {
@@ -32,4 +34,19 @@
   display: flex;
   flex-direction: column;
   margin: 10px auto
+}
+
+.popup {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background-color: #f0fdf4;
+  color: #14532d;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.formLabel {
+  margin-left: 8%;
 }

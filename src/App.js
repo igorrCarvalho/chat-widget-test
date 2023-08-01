@@ -7,6 +7,7 @@ import { INITIAL_STATE } from './utils/data';
 const App = () => {
   const [state, setState] = useState(INITIAL_STATE);
   const [CWState, setCWState] = useState(INITIAL_STATE);
+  const [showPopUp, setPopUp] = useState(false);
 
   const handleFormData = ({ target: { value, name } }) => {
     setState(prevState => ({
@@ -21,9 +22,21 @@ const App = () => {
     }))
   };
 
+  const handlePopUp = () => {
+    setPopUp(true);
+    setTimeout(() => {
+      setPopUp(false);
+    }, 2000);
+  };
+
+  const closePopUp = () => {
+    setPopUp(false)
+  };
+
   return (
     <>
       <FormComponent
+        handlePopup={handlePopUp}
         handleFormData={handleFormData}
         handleSaveData={handleSaveData}
         api={state.api}
@@ -75,6 +88,14 @@ const App = () => {
         width={CWState.width}
         windowTitle={CWState.windowTitle}
       />
+      { showPopUp && (
+        <div className="popup">
+          <span className="close" onClick={closePopUp}>
+            &times;
+          </span>
+          <p>Changes saved successfully!</p>
+        </div>
+      )}
     </>
   );
 };
