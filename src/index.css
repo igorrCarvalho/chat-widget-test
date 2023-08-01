@@ -9,6 +9,9 @@
   margin: 20px auto;
   border: 1px solid #e4e8ee;
   padding: 15px;
+  -webkit-box-shadow: -4px 8px 23px -12px rgba(66,66,66,0.62);
+  -moz-box-shadow: -4px 8px 23px -12px rgba(66,66,66,0.62);
+  box-shadow: -4px 8px 23px -12px rgba(66,66,66,0.62);
 }
 
 .formInput {
@@ -45,6 +48,9 @@
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-box-shadow: -7px 6px 23px -8px rgba(66,66,66,0.62);
+  -moz-box-shadow: -7px 6px 23px -8px rgba(66,66,66,0.62);
+  box-shadow: -7px 6px 23px -8px rgba(66,66,66,0.62);
 }
 
 .formLabel {
