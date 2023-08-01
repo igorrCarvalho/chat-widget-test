@@ -50,3 +50,11 @@
 .formLabel {
   margin-left: 8%;
 }
+
+.saveBtn {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 5%;
+  padding: 10px;
+}

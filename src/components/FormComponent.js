@@ -35,7 +35,7 @@ const FormComponent = ({ handleFormData, handleSaveData, handlePopup, ...state }
           handleSaveData();
           handlePopup();
         }}
-        className="formBtn"
+        className="formBtn saveBtn"
         type="button"
       >
         Save
