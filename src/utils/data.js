@@ -119,7 +119,7 @@ export const inputsData = [
 export const INITIAL_STATE = {
     api: '{}',
     flowId: '',
-    hostUrl: '',
+    hostUrl: 'https://logspace-langflow.hf.space',
     CIField: 'input',
     ChatInputs: '{"input":""}',
     BotMS: '{}',
