@@ -117,7 +117,7 @@ export const inputsData = [
 ];
 
 const h = (window.innerHeight * 65) / 100;
-const w = (window.innerWidth * 23) / 100;
+const w = (window.innerWidth * 35) / 100;
 
 export const INITIAL_STATE = {
     api: '{}',
