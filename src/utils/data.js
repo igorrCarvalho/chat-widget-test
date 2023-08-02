@@ -116,6 +116,9 @@ export const inputsData = [
   },
 ];
 
+const h = (window.innerHeight * 65) / 100;
+const w = (window.innerWidth * 23) / 100;
+
 export const INITIAL_STATE = {
     api: '{}',
     flowId: '',
@@ -128,7 +131,7 @@ export const INITIAL_STATE = {
     chatWS: '{}',
     chatOK: '',
     errorMS: '{}',
-    height: 650,
+    height: h,
     inputCS: '{}',
     inputStyle: '{}',
     online: true,
@@ -138,6 +141,6 @@ export const INITIAL_STATE = {
     sendBS: '{}',
     sendIS: '{}',
     userMS: '{}',
-    width: 450,
+    width: w,
     windowTitle: '',
   };

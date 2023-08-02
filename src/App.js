@@ -1,7 +1,7 @@
 import './App.css';
 import ChatWidget from './components/ChatWidget';
 import FormComponent from './components/FormComponent';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { INITIAL_STATE } from './utils/data';
 
 const App = () => {
